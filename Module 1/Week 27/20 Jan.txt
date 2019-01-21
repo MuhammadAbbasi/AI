@@ -1,0 +1,52 @@
+How can this system process huge amount og data so fast?
+
+This is due to engine of neural networks --> GRADIENT BASED OPTIMISATION
+
+To go to that side, first find meaning of gradient.
+		Its ratio between y and x axis
+
+Gradient in Calculas is "Differentiaition".
+Gradient in ML is "Weight (w)".
+
+Optimization is getting the optimal point.
+
+Break even -->  Last point from where you can not go beyond
+
+Hyperparameters --> that we can change
+
+
+Weights contain the information learned by the network from exposure to training data.
+
+
+Random Initialization --> Model sets weights values randomly
+
+Back probogation --> sets the last weight of the model and go further backward. 
+
+Training Loop:
+	1 - Draw a batch of traiing samples and corresponding targets
+	2 - Run the network on samples and obtain predictions y_pred.
+	3 - Compute the loss of network on a batch, a measure of mis_match between y_pred 		and y.
+	4 - Update all weights of the network in a way that slightly reduces the loss on 			this batch.
+
+
+How it computes whether the weight should increase or decrease?
+	Fact: All operations used in network are differentiable.
+		thus compute the gradient of the loss in the opposite direction from the 		gradient,thus decreasing the loss.
+
+Derivative:
+	If derivative is negative --> change in x of f(x) will decrease value of function.
+	If derivative is positive --> change in x of f(x) will increase value of function.
+
+
+
+According to "Gradient Descent Algorithm"
+	m = m + (error)x		(learning rate)
+	b = b + (error)			(learning rate)
+
+
+Now,
+	Which way to move?	-->	derivative
+	How big step to take	-->	learning rate
+
+
+3:00 PM 1/20/2019
